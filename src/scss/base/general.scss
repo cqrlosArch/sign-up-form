@@ -6,6 +6,9 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   background-image: url('../assets/images/bg-intro-mobile.png');
+  @include mx.md {
+    background-image: url('../assets/images/bg-intro-desktop.png');
+  }
 }
 
 *,
