@@ -1,14 +1,14 @@
 main
   section.section
     header.section__header
-      p.section__cta
+      h2.section__cta
         span Try it free 7 days 
         | then $20/mo. thereafter
     form.form#form
-      div(data-error="First name cannot be empty").form__field: input(type="text" name="first-name" placeholder="First name").form__input
-      div(data-error="Last name cannot be empty").form__field: input(type="text" name="last-name" placeholder="Last name").form__input
-      div(data-error="Looks like this is not an email").form__field: input(type="email" name="email" placeholder="Email Address").form__input
-      div(data-error="Password cannot be empty").form__field: input(type="password" name="password" placeholder="Password").form__input
+      div(data-error="First name cannot be empty").form__field: input(type="text" name="first-name" placeholder="First name" aria-label="first name").form__input
+      div(data-error="Last name cannot be empty").form__field: input(type="text" name="last-name" placeholder="Last name" aria-label="last name").form__input
+      div(data-error="Looks like this is not an email").form__field: input(type="email" name="email" placeholder="Email Address" aria-label="email").form__input
+      div(data-error="Password cannot be empty").form__field: input(type="password" name="password" placeholder="Password" aria-label="password").form__input
       div.form__field: input(type="submit" value="Claim your free trial").form__submit 
       p.form__terms  By clicking the button, you are agreeing to our
         small
