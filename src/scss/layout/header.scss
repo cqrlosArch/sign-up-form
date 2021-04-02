@@ -1,0 +1,23 @@
+@use '../abstracts/mixins.scss' as mx;
+.header {
+  @include mx.md {
+    padding: 2rem;
+  }
+}
+.title {
+  font-size: 1.5rem;
+  @include mx.md {
+    text-align: left;
+    font-size: 2.5rem;
+    padding-right: 5rem;
+  }
+}
+
+.text {
+  margin-bottom: 4rem;
+  @include mx.md {
+    text-align: left;
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+}
